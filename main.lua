@@ -34,4 +34,7 @@ composer.recycleOnSceneChange = true -- Automatically remove scenes from memory
 --local S = require('setBar')
 --local a = S['ccreat'] ()
 
+local bar = require("setBar")
+bar.cret()
+
 composer.gotoScene("startw")

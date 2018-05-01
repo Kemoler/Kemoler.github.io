@@ -1,6 +1,3 @@
-local composer = require( "composer" )
-local relayout = require('relayout')
-local widget = require('widget')
 -- -----------------------------------------------------------------------------------
 -- Code outside of the scene event functions below will only be executed ONCE unless
 -- the scene is removed entirely (not recycled) via "composer.removeScene()"
@@ -13,82 +10,64 @@ local widget = require('widget')
 -- Scene event functions
 -- -----------------------------------------------------------------------------------
  
+local relayout = require('relayout')
+local composer = require('composer')
+local _W, _H, _CX, _CY = relayout._W, relayout._H, relayout._CX, relayout._CY
+local _SW,_SH = relayout._SW,relayout._SH   
+local _setW, _setH = relayout._setW, relayout._setH
+local _setX, _setY = relayout._setX, relayout._setY
+
+local _backgroundset, _retB, _gohome
 -- create()
-_S['ccreat'] =  function _S.ccreate(  )
-	local _W, _H, _CX, _CY = relayout._W, relayout._H, relayout._CX, relayout._CY
-	local _SW,_SH = relayout._SW,relayout._SH	
-	local _setW, _setH = relayout._setW, relayout._setH
-	local _setX, _setY = relayout._setX, relayout._setY
+local function setBar()
 
     local group = self.view
-    local backgroundset = display.newImageRect(group,'settingsBack.jpg', _W, _H)
-    backgroundset.x = _CX
-    backgroundset.y = _CY
 	--relayout.add(background)
 	
-	--[[
-	local bottomGroup = display.newGroup()
-	bottomGroup.x, bottomGroup.y = _CX, _H
-	group:insert(bottomGroup)
-	relayout.add(bottomGroup)
-	--
-
-	local ship = display.newImageRect(group, 'ship.jpg',_SW,_SH)
-	ship.x = _CX
-	ship.y = _H - _SH
-
-	
-	transition.to(ship, {time = 1300, x = _SW / 2 + 10})
-	transition.to(ship, {
-    time = 4000, 
-    x = _W - _SW / 2 - 10,
-    delay = 1300,
-    iterations = -1,
-    transition = easing.continuousLoop,
-    })
-
-    self.play = widget.newButton({
-    	defaultFile = 'play.png',
-    	overFile = 'play-over.png',
-    	width = _W*0.4, height = _H*0.2,
-    	x = _CX, y = _H*0.7,
-    	onRelease = function()
-    		---------------SOUNDS.PLAY
-    		composer.gotoScene('game')
-    	end
-    })
-	group:insert(self.play)
-	relayout.add(self.play)
-
-
-	self.settings = widget.newButton({
-		defaultFile = "settings.png",
-		overFile = "settings-over.png",
-		width = _setW, height = _setH,
-		x = _setX, y = _setY,
-		onRelease = function()
-			composer.gotoScene('game')
-		end
-	})
-	group:insert(self.settings)
-	relayout.add(self.settings)
-
-	
-    --]]
     return group
     -- Code here runs when the scene is first created but has not yet appeared on screen
  
 end
- 
-print(12312)
--- show()
-function _S.show(  )
- 
-    self.isVisible = false
+
+function _S.show()
+    _backgroundset.isVisible = true
+    _retB.isVisible = true
+    _gohome.isVisible = true
 end
- 
 
--- -----------------------------------------------------------------------------------
+function _S.hide()
+    _backgroundset.isVisible = false
+    _retB.isVisible = false
+    _gohome.isVisible = false
+end    
 
---composer.gotoScene('vart')
+function _S.cret()
+    _backgroundset = display.newImageRect('settingsBack.png', _W, _H - _SH*1.5)
+    _backgroundset.x = _CX
+    _backgroundset.y = _CY-_SH*0.7
+    _backgroundset.isVisible = false
+
+    _retB = display.newImageRect('retBack.png', _setW, _setH)
+    _retB.x = _setX*1.5
+    _retB.y = _setY*1.1
+    _retB.isVisible = false
+    _retB:addEventListener('touch',function(event)
+        if (event.phase == 'ended') then
+            print('fdsaforit')
+            _S.hide()
+        end
+    end)
+
+    _gohome = display.newImageRect('Home.png', _setW*1.2, _setH*1.2)
+    _gohome.x = _setX*1.5
+    _gohome.y = _setY*3
+    _gohome.isVisible = false
+    _gohome:addEventListener('touch',function( event )
+        if (event.phase == 'ended') then
+            _S.hide()
+            composer.gotoScene("startw")
+        end
+    end)
+end
+
 return _S

@@ -4,6 +4,9 @@ local scene = composer.newScene()
  
 local relayout = require('relayout')
 local widget = require('widget')
+
+local bar = require("setBar")
+
 -- -----------------------------------------------------------------------------------
 -- Code outside of the scene event functions below will only be executed ONCE unless
 -- the scene is removed entirely (not recycled) via "composer.removeScene()"
@@ -70,7 +73,7 @@ function scene:create( event )
 		width = _setW, height = _setH,
 		x = _setX, y = _setY,
 		onRelease = function()
-			composer.gotoScene('game')
+			bar.show()
 		end
 	})
 	self.settings.isRound = true
