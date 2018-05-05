@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<script type="text/javascript" src="/js/loader_nav5616651018917_0.js"></script>
+
+<link rel="shortcut icon" href="/images/icons/favicons/fav_logo.ico?6" />
+
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="robots" content="noindex, nofollow" />
+
+<title>ВКонтакте | Poll Widget</title>
+
+<noscript><meta http-equiv="refresh" content="0; URL=/badbrowser.php"></noscript>
+
+<link rel="stylesheet" type="text/css" href="/css/al/fonts_cnt.css?5181750877" />
+<link rel="stylesheet" type="text/css" href="/css/al/lite.css?41867895057" />
+
+<script type="text/javascript">
+var vk = {
+  ads_rotate_interval: 120000,
+  al: parseInt('3') || 4,
+  intnat: '1' ? true : false,
+  lang: 0,
+  rtl: parseInt('') || 0,
+  version: 5616651018917,
+  loginscheme: 'https',
+  ip_h: 'a6b640d82ad7251107',
+  id: parseInt('103959481'),
+  nodomain: '',
+  pr_tpl: "<div class=\"pr %cls%\" id=\"%id%\"><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><\/div>",
+  audioInlinePlayerTpl: "<div class=\"audio_inline_player _audio_inline_player no_select\">\n  <div class=\"audio_inline_player_right\">\n    <div class=\"audio_inline_player_volume\"><\/div>\n  <\/div>\n  <div class=\"audio_inline_player_left\">\n    <div class=\"audio_inline_player_progress\"><\/div>\n  <\/div>\n<\/div>",
+  widget: 1,
+  css_dir: ''
+}
+var StaticFiles = {
+  'lite.js':{v:2813806548},
+  'lite.css':{v:41867895057},'fonts_cnt.css':{v:5181750877},'lang0_0.js': {v: 6887},'api/xdm.js':{v:1449919642},'api/widgets/al_poll.js':{v:790017760},'widget_poll.css':{v:1}
+}
+</script>
+<script type="text/javascript" src="/js/al/lite.js?2813806548"></script>
+<script type="text/javascript" src="/js/lang0_0.js?6887"></script><link type="text/css" rel="stylesheet" href="/css/al/widget_poll.css?1"></link><script type="text/javascript" src="/js/api/xdm.js?1449919642"></script><script type="text/javascript" src="/js/api/widgets/al_poll.js?790017760"></script><base target="_blank"/>
+
+</head>
+
+<body class="is_rtl VK1  widget_body wpoll_section_form">
+  <div id="system_msg" class="fixed"></div>
+  <div id="utils"></div>
+  <div id="box_layer_bg" class="fixed"></div><div id="box_layer_wrap" class="scroll_fix_wrap fixed"><div id="box_layer"><div id="box_loader"><div class="pr pr_baw pr_medium" id="box_loader_pr"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div><div class="back"></div></div></div></div>
+
+  <div id="stl_left"></div><div id="stl_side"></div>
+
+  <a id="widget_focus_link" href="javascript: return;"></a>
+  <script type="text/javascript">domStarted();</script>
+
+  <div id="page_wrap"><div class="wpoll_page _wpoll_page">
+  <div class="wpoll_head _wpoll_head clear_fix">
+    <a class="wpoll_logo" href="/dev/Poll"></a>
+    <a class="wpoll_revote_icon" onclick="WPoll.resetPollVote()" title="Переголосовать"></a>
+    <span class="wpoll_title">Опрос</span>
+    <span class="wpoll_admin_link"><span class="divider">|</span><a class="wpoll_admin_link_return" onclick="WPoll.switchSection(cur.my_vote ? 'results' : 'form')">вернуться</a><a class="wpoll_admin_link_browse" onclick="WPoll.switchSection('admin')">администрирование</a></span>
+  </div>
+  <div class="_wpoll_wrap wpoll_wrap">
+    <div class="_wpoll_content wpoll_content"><div class="wpoll_form">
+  <div class="wpoll_question">Кто же лучше?</div>
+  <div class="_wpoll_options wpoll_options">
+    <div class="wpoll_form_item radiobtn" onclick="radiobtn(this, 983135085, 'wpoll'); WPoll.doVote(983135085);">���� ���� <a target="_blank" href="https://vk.com/rautville"><img class="list-image-border" src="Raut.jpg"></a></div><div class="wpoll_form_item radiobtn" onclick="radiobtn(this, 983135086, 'wpoll'); WPoll.doVote(983135086);">Ярмак &lt;a target=&quot;_blank&quot;  href=&quot;https://vk.com/yarmak_music&quot;&gt;&lt;img class=&quot;list-image-border&quot; src=&quot;Yarmak.jpg&quot;&gt;</div>
+  </div>
+</div></div>
+    <div class="_wpoll_footer wpoll_footer clear_fix"></div>
+  </div>
+</div></div>
+  <div class="progress" id="global_prg"></div>
+
+  <script type="text/javascript">
+    if (window.devicePixelRatio >= 2) {
+      document.body.className += ' is_2x';
+    }
+    domReady();
+    
+addLangKeys({"global_emoji_cat_recent":"Часто используемые","global_emoji_cat_1":"Эмоции","global_emoji_cat_2":"Животные и растения","global_emoji_cat_3":"Жесты и люди","global_emoji_cat_4":"Еда и напитки","global_emoji_cat_5":"Спорт и активности","global_emoji_cat_6":"Путешествия и транспорт","global_emoji_cat_7":"Предметы","global_emoji_cat_8":"Символы","global_emoji_cat_9":"Флаги"}, true);
+addTemplates({"_":"_"});
+cur.lang = extend(cur.lang || {}, {
+  wall_N_replies: null,
+  wall_all_replies: ''
+});
+WPoll.init({"section":"form","my_vote":false,"poll_id":"292213029_d5c40c13b25fc3493c","answerTpl":"<div class=\"wpoll_input\">\n  <div class=\"wpoll_input_remove\" data-title=\"Удалить вариант\" onmouseover=\"showTitle(this)\" onclick=\"WPoll.admRemoveAnswer(this)\"><\/div>\n  <input type=\"text\" class=\"text dark\" \/>\n<\/div>","app":6177925,"page_query":null,"poll_url":"http:\/\/file:\/\/\/C:\/Users\/Sergey\/Desktop\/%D0%A1%D0%B0%D0%B9%D1%82\/PageG.html","vote_hash":"0eddb939616119b98c","qversion":1,"admin_hash":"8175fa0e2f5100d426"});;vk.id = 103959481
+    ;window._tmr = window._tmr || [];
+var tmr = {"id":2685520,"pid":103959481,"url":"file:\/\/\/C:\/Users\/Sergey\/Desktop\/%D0%A1%D0%B0%D0%B9%D1%82\/PageG.html","referrer":"","title":"Сравниваем реперов:name1.Name2"};
+tmr.url     = unclean(tmr.url     || '');
+tmr.referrer = unclean(tmr.referrer || '');
+tmr.title   = unclean(tmr.title   || '');
+window._tmr.push({id: tmr.id, pid: tmr.pid, url: tmr.url, referrer: tmr.referrer, title: tmr.title, type: "pageView", start: (new Date()).getTime()});
+(function (d, w) {
+var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+  </script>
+</body>
+
+</html>
