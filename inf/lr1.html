@@ -1,0 +1,2444 @@
+<!DOCTYPE html>
+<!-- saved from url=(0159)https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/ -->
+<html lang="ru"><!--<![endif]--><head dir="ltr"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+<title data-base-title="
+ Лабораторная работа 1. Представление чисел в различных системах счисления | COMTEC Содержание | Национальная платформа открытого образования">
+  
+ Лабораторая работа 1. Представление чисел в различных системах счисления | Лабораторная работа 1. Представление чисел в различных системах счисления | COMTEC Содержание | Национальная платформа открытого образования
+</title>
+
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="./lr1_files/djangojs.1ebabda71e21.js.Без названия"></script>
+
+  <link rel="icon" type="image/x-icon" href="https://s31333.cdn.ngenix.net/351a7d/default/default/images/favicon.bd3d272022e9.ico">
+
+  
+  
+
+    <link href="./lr1_files/lms-style-vendor.4ccaa7f84216.css" rel="stylesheet" type="text/css">
+
+
+
+  
+  
+
+    <link href="./lr1_files/lms-main-v1.16802bc86d4d.css" rel="stylesheet" type="text/css">
+
+
+
+
+      
+    <script type="text/javascript" src="./lr1_files/lms-main_vendor.a04b73033169.js.Без названия" charset="utf-8"></script>
+
+
+      
+    <script type="text/javascript" src="./lr1_files/lms-application.258abdfb78ca.js.Без названия" charset="utf-8"></script>
+
+
+
+  <script>
+    window.baseUrl = "https://s31333.cdn.ngenix.net/351a7d/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="./lr1_files/require-config.cd72e66c1a3e.js.Без названия"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.22ad04bb0497',
+'js/courseware/course_home_events': 'js/courseware/course_home_events.f9fa9db95688',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales.084396f4103c',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.b062d5eadf09',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.fefa851b3af9',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.ab9136aa78e6',
+'js/dateutil_factory': 'js/dateutil_factory.f141a7899e5d',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.ab6b0ad85d15',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/views/message_banner': 'js/views/message_banner.099aec538f98',
+'js/student_profile/views/learner_profile_factory': 'js/student_profile/views/learner_profile_factory.49278d75ab86'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+    
+    <script type="text/javascript" src="./lr1_files/lms-modules.ea7f1ecbb601.js.Без названия" charset="utf-8"></script>
+
+
+
+  
+
+  
+
+    <link href="./lr1_files/lms-style-course-vendor.60799ae7d9f8.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+
+    <link href="./lr1_files/lms-course.26bbbd1a0efb.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript" src="./lr1_files/jquery.autocomplete.3bd10d7510d2.js.Без названия"></script>
+<script type="text/javascript" src="./lr1_files/tooltip_manager.e3531e99ed92.js.Без названия"></script>
+
+<link href="./lr1_files/jquery.autocomplete.09a0b34739a2.css" rel="stylesheet" type="text/css">
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY">
+
+
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="./lr1_files/moment-with-locales.084396f4103c.js.Без названия"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="draggabilly" src="./lr1_files/draggabilly.26caba6f7187.js.Без названия"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://s31333.cdn.ngenix.net/351a7d/js/courseware/accordion_events.6064c7809de5.js?raw" src="./lr1_files/accordion_events.6064c7809de5.js.Без названия"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://s31333.cdn.ngenix.net/351a7d/js/dateutil_factory.f141a7899e5d.js?raw" src="./lr1_files/dateutil_factory.f141a7899e5d.js.Без названия"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/courseware/accordion_events" src="./lr1_files/accordion_events.6064c7809de5.js(1).Без названия"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="course_bookmarks/js/views/bookmark_button" src="./lr1_files/bookmark_button.ab6b0ad85d15.js.Без названия"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/views/message_banner" src="./lr1_files/message_banner.099aec538f98.js.Без названия"></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_ru"><div id="MathJax_Message" style="display: none;"></div>
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/#main">Перейти к основному содержимому</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<header id="global-navigation" class="global-header header slim">
+    <div class="container-fluid" aria-label="Глобально">
+      <div class="top-bar header__row">
+
+        <div class="header__dropdown-wrapper header__dropdown-main">
+            <div class="dropdown" id="siteMenu">
+              <span class="dropdown-toggle">
+                <div class="burger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </span>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                  <div class="header__search search-form search-form--mobile" style="display: none;">
+                    <form role="form" action="https://openedu.ru/course/" name="search" id="search-form" autocomplete="off">
+                    <div class="form-group">
+                        <span class="icon search-icon pull-right" id="search-icon"></span>
+                        <input type="submit" style="display: none;" value="Поиск в каталоге" class="btn btn-default">
+                        <input class="form-control" name="text" maxlength="255" id="search-form-text" placeholder="Search..."> </div>
+                    </form>
+                  </div>
+                  <li role="presentation">
+                    <a href="https://openedu.ru/course/">Каталог курсов</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="https://openedu.ru/partners/apply/">Сотрудничество</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="http://npoed.ru/about">О проекте</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="https://openedu.ru/feedback">Помощь</a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+        <div class="header__logo">
+          <a class="header__logo-link" href="https://courses.openedu.ru/">
+            
+              <img class="header__logo-img" src="./lr1_files/OpenEdXLogo.287e6752bd91.png" alt="Национальная платформа открытого образования">
+            
+          </a>
+        </div>
+        <nav class="header__nav">
+          <a class="header__nav-link" href="https://openedu.ru/course/">Каталог курсов</a>
+          <a class="header__nav-link" href="https://openedu.ru/partners/apply">Сотрудничество</a>
+          <a class="header__nav-link" href="http://npoed.ru/about">О проекте</a>
+        </nav>
+        <div class="header__search search-form search-form--desktop">
+          <form role="form" action="https://openedu.ru/course/" name="search" id="search-form" autocomplete="off">
+          <div class="form-group">
+              <span class="icon search-icon pull-right" id="search-icon"></span>
+              <input class="form-control" name="text" maxlength="255" id="search-form-text" placeholder="Поиск в каталоге"> </div>
+          </form>
+        </div>
+          <div class="header__dropdown-wrapper header__dropdown-login" id="sb_profile" style="z-index: 1000">
+              <div class="dropdown">
+                <span class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+                  <span class="icon profile-icon"></span>
+                  <span class="dropdown-login__text">Мой профиль</span>
+                </span>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+                  
+                    <li><a href="https://openedu.ru/my/">Мои курсы</a></li>
+                    <li><a href="https://sso.openedu.ru/profile/">Профиль</a></li>
+                  
+                  <li><a href="https://courses.openedu.ru/social-logout" role="menuitem">Выйти</a></li>
+                </ul>
+              </div>
+
+              </div>
+          </div>
+      </div>
+    </header></div>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    <div class="content-wrapper" id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%= largeALT %>, <%- gettext('Large') %>" src="<%= largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+<script type="text/template" id="sequence-breadcrumbs-tpl">
+    <% if (unifiedCourseView) { %>
+    <a href="<%- '/courses/' + courseId + '/course/#' + blockId %>">
+        <span class="fa fa-arrow-circle-left" aria-hidden="true" aria-describedby="outline-description"></span>
+        <span class="sr-only" id="outline-description"><%- gettext('Return to course outline') %></span>
+        <b><%- gettext('Outline') %></b>
+    </a>
+    <span> > </span>
+<% } %>
+<span class="position"><%- pathText %></span>
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="message-banner" aria-live="polite"></div>
+
+  
+
+
+
+
+
+
+
+    
+    <script type="text/javascript" src="./lr1_files/lms-proctoring.54e175463a40.js.Без названия" charset="utf-8"></script>
+
+
+        <script type="text/template" id="proctored-exam-status-tpl">
+            <div class="exam-timer">
+    <%
+        function gtLtEscape(str) {
+            return String(str)
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+        }
+    %>
+    <div class='exam-text'>
+        <%= interpolate_text(gettext('You are taking "{exam_link}" as a {exam_type} exam. The timer on the right shows the time remaining in the exam.'), {exam_link: "<a href='" + exam_url_path + "'>"+gtLtEscape(exam_display_name)+"</a>", exam_type: (!_.isUndefined(arguments[0].exam_type)) ? exam_type : gettext('timed')}) %>
+        <%- gettext('To receive credit for problems, you must select "Submit" for each problem before you select "End My Exam".') %>
+    </div>
+    <div id="turn_in_exam_id" class="pull-right turn_in_exam">
+        <span>
+            <% if(attempt_status !== 'ready_to_submit') {%>
+                <button class="exam-button-turn-in-exam btn btn-pl-primary">
+                    <%- gettext("End My Exam") %>
+                </button>
+            <% } %>
+        </span>
+        <span class="sr timer-announce" aria-live="assertive"></span>
+        <span id="time_remaining_id">
+            <b>
+            </b>
+        </span>
+    </div>
+</div>
+
+        </script>
+    <div class="proctored_exam_status"></div>
+
+    <nav class="courseware wrapper-course-material" aria-label="Материалы курса">
+        <div class="course-material">
+            <div class="coursename-title hd-5">Информатика для втузов</div>
+            
+            <ol class="tabs course-tabs">
+                
+
+
+
+
+
+  
+  <li class="tab">
+  <a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/info" class="">
+  Главная страница
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware" class="active">
+  Курс
+      <span class="sr">, current location</span>
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/3663aeaf1f614c5d9e03295fa1065287/" class="">
+  Расписание
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/4ca937e5b3384ce8bf3af0373e444f2a/" class="">
+  Справка
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/discussion/forum/" class="">
+  Обсуждение
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/progress" class="">
+  Прогресс
+  </a>
+  </li>
+
+                
+            </ol>
+        </div>
+    </nav>
+
+
+<div class="container">
+  <div class="course-wrapper" role="presentation">
+
+    <div class="course-index">
+
+      <div class="wrapper-course-modes">
+
+      		<div class="courseware-show-accordion js-open-menu">Меню курсов</div>
+
+    			<div class="courseware-bookmarks-button">
+    				<a class="bookmarks-list-button" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/bookmarks/">
+    			    	Закладки
+    				</a>
+    			</div>
+
+
+      </div>
+
+      <div class="accordion">
+        <nav class="course-navigation" aria-label="Курс">
+            
+
+
+
+
+
+    
+
+<a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/#1-child" role="button" class="button-chapter chapter" id="1-parent" aria-controls="1-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Неделя 1. Введение в информатику. Основы теории информации">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Неделя 1. Введение в информатику. Основы теории информации
+    </span>
+</a>
+<div class="chapter-content-container" id="1-child" tabindex="-1" role="region" aria-label="Неделя 1. Введение в информатику. Основы теории информации submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/d75de1ec50034a5780a2a29d65913d9c/92d92e5a2b2d4bac8e3dba14b47b14e5/">
+                <p class="accordion-display-name">Введение </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/d75de1ec50034a5780a2a29d65913d9c/cabcb0da35b440a195dbde8e601df26c/">
+                <p class="accordion-display-name">Основы теории информации </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/d75de1ec50034a5780a2a29d65913d9c/465bb3b011624b8ea26d442905e85fd0/">
+                <p class="accordion-display-name">Мера Хартли </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/d75de1ec50034a5780a2a29d65913d9c/fbacb661f3554d4aaaa9409e894eb939/">
+                <p class="accordion-display-name">Мера Шеннона </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/d75de1ec50034a5780a2a29d65913d9c/86c0fc2acaf041e3b11e4666db37fa81/">
+                <p class="accordion-display-name">Дополнительный материал </p>
+
+                
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/#2-child" role="button" class="button-chapter chapter active is-open" id="2-parent" aria-controls="2-child" aria-expanded="true">
+    <span class="group-heading active" aria-label="Неделя 2. Системы счисления. Особенности округления чисел текущая глава">
+        <span class="icon fa fa-caret-down" aria-hidden="true"></span>
+        Неделя 2. Системы счисления. Особенности округления чисел
+    </span>
+</a>
+<div class="chapter-content-container is-open" id="2-child" tabindex="-1" role="region" aria-label="Неделя 2. Системы счисления. Особенности округления чисел submenu">
+    <div class="chapter-menu is-open" style="display: block;">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/9ca536d22cb74a4ea605b1d993d05907/">
+                <p class="accordion-display-name">Единицы измерения количества информации </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/82ef6cdc0f934bd1a7b97c6ff6ed59a1/">
+                <p class="accordion-display-name">Позиционные системы счисления. Перевод между ними </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/21a5a9c8f2324c0c845d0f5bb2f0fcb6/">
+                <p class="accordion-display-name">Оптимальная система счисления </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/887938127943447b92c0201139afabd1/">
+                <p class="accordion-display-name">Нетрадиционные системы счисления </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/0e2c7609ad114141a018436a1607f695/">
+                <p class="accordion-display-name">Округление чисел </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/246aada5916d49829d04608041534fcb/">
+                <p class="accordion-display-name">Непозиционные системы счисления </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item active ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/">
+                <p class="accordion-display-name">Лабораторная работа 1. Представление чисел в различных системах счисления <span class="sr">текущий раздел</span></p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/ddd807e3e5a44e12b741c04a743aad32/">
+                <p class="accordion-display-name">Дополнительный материал </p>
+
+                
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/#3-child" role="button" class="button-chapter chapter" id="3-parent" aria-controls="3-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Неделя 3. Представление чисел в ЭВМ. Арифметика в ограниченной разрядной сетке">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Неделя 3. Представление чисел в ЭВМ. Арифметика в ограниченной разрядной сетке
+    </span>
+</a>
+<div class="chapter-content-container" id="3-child" tabindex="-1" role="region" aria-label="Неделя 3. Представление чисел в ЭВМ. Арифметика в ограниченной разрядной сетке submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/b74fd626cf544b12b929ed568b586fcc/32ceee1c40f545df84ee3bc7162c53db/">
+                <p class="accordion-display-name">Представление целых чисел в ограниченной разрядной сетке ЭВМ </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/b74fd626cf544b12b929ed568b586fcc/f5c5b1da8b2943c6bb4e63c01af1897f/">
+                <p class="accordion-display-name">Представление отрицательных чисел в ЭВМ </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/b74fd626cf544b12b929ed568b586fcc/8de990bbc3a047ee8135b07acd6b60fc/">
+                <p class="accordion-display-name">Флаги состояния процессора </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/b74fd626cf544b12b929ed568b586fcc/8fa80a1d77b3401aac32293ba9e52be1/">
+                <p class="accordion-display-name">Лабораторная работа 2. Выполнение арифметических операций над двоичными числами </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/b74fd626cf544b12b929ed568b586fcc/67ee8ebba7c246008bf958a69a6790a4/">
+                <p class="accordion-display-name">Дополнительный материал </p>
+
+                
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/#4-child" role="button" class="button-chapter chapter" id="4-parent" aria-controls="4-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Неделя 4. Основы сжатия информации. Основы помехоустойчивого кодирования">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Неделя 4. Основы сжатия информации. Основы помехоустойчивого кодирования
+    </span>
+</a>
+<div class="chapter-content-container" id="4-child" tabindex="-1" role="region" aria-label="Неделя 4. Основы сжатия информации. Основы помехоустойчивого кодирования submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/bedadc1696bf404ba09deb2253625925/30d7eae56ae947719082f3316b5ae48a/">
+                <p class="accordion-display-name">Алфавит. Сжатие данных </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/bedadc1696bf404ba09deb2253625925/f2138506c1ba4038909f32723d7a75f6/">
+                <p class="accordion-display-name">Алгоритм Шеннона-Фано </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/bedadc1696bf404ba09deb2253625925/34ebf24a2b81418f83eee6bd8ad4ed75/">
+                <p class="accordion-display-name">Алгоритм Хаффмана </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/bedadc1696bf404ba09deb2253625925/f19f9de48dec4952af3e0c14dced3bc1/">
+                <p class="accordion-display-name">Код Хэмминга </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/bedadc1696bf404ba09deb2253625925/c3ca29ee96854fae93c02418347ad772/">
+                <p class="accordion-display-name">Лабораторная работа 3. Кодирование чисел с использованием алфавита </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/bedadc1696bf404ba09deb2253625925/efe3d380715f4ed2a4bc3794e6eeacdb/">
+                <p class="accordion-display-name">Дополнительный материал </p>
+
+                
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/#5-child" role="button" class="button-chapter chapter" id="5-parent" aria-controls="5-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Неделя 5. Основы дискретной математики для ЭВМ">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Неделя 5. Основы дискретной математики для ЭВМ
+    </span>
+</a>
+<div class="chapter-content-container" id="5-child" tabindex="-1" role="region" aria-label="Неделя 5. Основы дискретной математики для ЭВМ submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/ec52a48c492b485fa63672401eee17a9/b7b6a7ce43a24891b2d84a3193b03e89/">
+                <p class="accordion-display-name">Основные понятия алгебры логики </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/ec52a48c492b485fa63672401eee17a9/ca83245a0d9e4d7ab007b87aa067f30d/">
+                <p class="accordion-display-name">Таблицы истинности </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/ec52a48c492b485fa63672401eee17a9/24ff9632e9dd449494f4e8cae3606dfd/">
+                <p class="accordion-display-name">Булевы функции </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/ec52a48c492b485fa63672401eee17a9/7a9283ccf8514785b0faaa013f261165/">
+                <p class="accordion-display-name">Нотации </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/ec52a48c492b485fa63672401eee17a9/e02ca6a0d40e473db1fccaa851f6464d/">
+                <p class="accordion-display-name">Лабораторная работа 4. Синтез помехоустойчивого кода </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/ec52a48c492b485fa63672401eee17a9/a1b98b3b34b54bd4ac3c8a7114ca3112/">
+                <p class="accordion-display-name">Промежуточный экзамен </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/ec52a48c492b485fa63672401eee17a9/918436f6a61948ea978f6519c4e66b9c/">
+                <p class="accordion-display-name">Промежуточный экзамен (наблюдаемый) </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/ec52a48c492b485fa63672401eee17a9/783ab99e7f0a4562a7fe70aa426b7353/">
+                <p class="accordion-display-name">Дополнительный материал </p>
+
+                
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/#6-child" role="button" class="button-chapter chapter" id="6-parent" aria-controls="6-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Неделя 6. Структура и принципы функционирования ЭВМ. Организация хранения данных в ЭВМ">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Неделя 6. Структура и принципы функционирования ЭВМ. Организация хранения данных в ЭВМ
+    </span>
+</a>
+<div class="chapter-content-container" id="6-child" tabindex="-1" role="region" aria-label="Неделя 6. Структура и принципы функционирования ЭВМ. Организация хранения данных в ЭВМ submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a47e0b3eb91c499eb55dc4cfcc983c8a/151c8ea36da64bd5bcdb94af8d161ef7/">
+                <p class="accordion-display-name">Развитие ЭВМ </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a47e0b3eb91c499eb55dc4cfcc983c8a/e89f461fce2d47888f9a40d438be46bd/">
+                <p class="accordion-display-name">ЭВМ фон Неймана </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a47e0b3eb91c499eb55dc4cfcc983c8a/08804caa69024c088f0a5817828f5843/">
+                <p class="accordion-display-name">Классификация архитектур ЭВМ </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a47e0b3eb91c499eb55dc4cfcc983c8a/a42f8c08ba1140ffb2efc97d41c16969/">
+                <p class="accordion-display-name">Обработка команд процессора </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a47e0b3eb91c499eb55dc4cfcc983c8a/3c4a0eb9f71d4e128d9126a50b71169f/">
+                <p class="accordion-display-name">Устройство элементов хранения данных </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a47e0b3eb91c499eb55dc4cfcc983c8a/9b4296ccb36440a5b7dea8db430bfe1e/">
+                <p class="accordion-display-name">Особенности работы памяти компьютера </p>
+
+                
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a47e0b3eb91c499eb55dc4cfcc983c8a/8de04702d1764f16aa43944884657d85/">
+                <p class="accordion-display-name">Дополнительный материал </p>
+
+                
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+    
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://s31333.cdn.ngenix.net/351a7d/js/courseware/accordion_events.6064c7809de5.js?raw'], function () {
+          require(['js/courseware/accordion_events'], function (AccordionEvents) {
+            
+        AccordionEvents();
+    
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+    
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://s31333.cdn.ngenix.net/351a7d/js/dateutil_factory.f141a7899e5d.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+        DateUtilFactory.transform(iterationKey=".localized-datetime");
+    
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+        </nav>
+      </div>
+
+    </div>
+    <section class="course-content" id="course-content">
+        <main id="main" tabindex="-1" aria-label="Content">
+            <div class="path" data-unified-course-view="false">
+    
+<span class="position">Неделя 2. Системы счисления. Особенности округления чисел &gt; Лабораторная работа 1. Представление чисел в различных системах счисления &gt; Лабораторая работа 1. Представление чисел в различных системах счисления</span>
+
+</div>
+
+              <div class="xblock xblock-student_view xblock-student_view-sequential xmodule_display xmodule_SequenceModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="sequential" data-request-token="7fa5885ed6fb11e89925d00d6f0f22c0" data-runtime-version="1" data-usage-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@sequential+block@c01c5aba9e9c48f0b4b3cf8dc31dda49" data-type="Sequence" data-course-id="course-v1:ITMOUniversity+COMTEC+special_2018_1">
+  
+  
+
+
+<div id="sequence_c01c5aba9e9c48f0b4b3cf8dc31dda49" class="sequence" data-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@sequential+block@c01c5aba9e9c48f0b4b3cf8dc31dda49" data-position="1" data-ajax-url="/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/xblock/block-v1:ITMOUniversity+COMTEC+special_2018_1+type@sequential+block@c01c5aba9e9c48f0b4b3cf8dc31dda49/handler/xmodule_handler" data-next-url="/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/ddd807e3e5a44e12b741c04a743aad32/?child=first" data-prev-url="/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/246aada5916d49829d04608041534fcb/?child=last">
+  <div class="sequence-nav">
+    <button class="sequence-nav-button button-previous" aria-hidden="true">
+      <span class="icon fa fa-chevron-prev" aria-hidden="true"></span>
+      <span>Назад</span>
+    </button>
+    <nav class="sequence-list-wrapper" aria-label="Последовательность блоков">
+      <ol id="sequence-list" role="tablist">
+        <li>
+        <button class="seq_other nav-item tab active" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-controls="seq_content" data-index="0" data-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@vertical+block@e6b89be6c286420785f26c582870f72e" data-element="1" data-page-title="Лабораторая работа 1. Представление чисел в различных системах счисления" data-path="Неделя 2. Системы счисления. Особенности округления чисел &gt; Лабораторная работа 1. Представление чисел в различных системах счисления &gt; Лабораторая работа 1. Представление чисел в различных системах счисления" id="tab_0">
+            <span class="icon fa seq_other" aria-hidden="true"></span>
+            <span class="fa fa-fw fa-bookmark bookmark-icon is-hidden" aria-hidden="true"></span>
+            <div class="sequence-tooltip sr"><span class="sr">other&nbsp;</span>Лабораторая работа 1. Представление чисел в различных системах счисления<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+          </button>
+        </li>
+      </ol>
+    </nav>
+    <button class="sequence-nav-button button-next" aria-hidden="true">
+      <span>Вперёд</span>
+      <span class="icon fa fa-chevron-next" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="sr-is-focusable" tabindex="-1"></div>
+
+  <div id="seq_contents_0" aria-labelledby="tab_0" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-runtime-class="LmsRuntime" data-init="VerticalStudentView" data-course-id="course-v1:ITMOUniversity+COMTEC+special_2018_1" data-request-token="7fa5885ed6fb11e89925d00d6f0f22c0" data-runtime-version="1" data-usage-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@vertical+block@e6b89be6c286420785f26c582870f72e" data-block-type="vertical"&gt;
+  
+
+  &lt;h2 class="hd hd-2 unit-title"&gt;Лабораторая работа 1. Представление чисел в различных системах счисления&lt;/h2&gt;
+    &lt;h4 class="hd-8 de-emphasized"&gt;Этот элемент курса оценивается
+        как &lt;td&gt;'Лабораторная работа'&lt;/td&gt;&lt;br&gt;
+        вес:&amp;nbsp;3.0
+    &lt;/h4&gt;
+    &lt;h4 class="hd-8 de-emphasized"&gt;&lt;span class="localized-datetime subtitle-name" data-datetime="2018-12-31 21:00:00+00:00" data-string="до {date}" data-timezone="Europe/Moscow" data-language="RU"&gt;&lt;/span&gt;&lt;/h4&gt;
+
+    
+
+
+
+&lt;div class="bookmark-button-wrapper"&gt;
+  &lt;button class="btn btn-link bookmark-button "
+    aria-pressed="false"
+    data-bookmark-id="kemol,block-v1:ITMOUniversity+COMTEC+special_2018_1+type@vertical+block@e6b89be6c286420785f26c582870f72e"
+    data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/"&gt;
+     &lt;span class="bookmark-text"&gt;Добавить в закладки&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@library_content+block@014afd16caf94eb8bb7a8a7b68c1dfd7"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-library_content xmodule_display xmodule_LibraryContentModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="library_content" data-request-token="7fa5885ed6fb11e89925d00d6f0f22c0" data-runtime-version="1" data-usage-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@library_content+block@014afd16caf94eb8bb7a8a7b68c1dfd7" data-type="None" data-course-id="course-v1:ITMOUniversity+COMTEC+special_2018_1"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": null}
+  &lt;/script&gt;
+  
+
+
+&lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_CapaModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="problem" data-request-token="7fa5885ed6fb11e89925d00d6f0f22c0" data-runtime-version="1" data-usage-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6" data-type="Problem" data-course-id="course-v1:ITMOUniversity+COMTEC+special_2018_1"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "Problem"}
+  &lt;/script&gt;
+  &lt;div id="problem_e3508a139f5320b2c8f6" class="problems-wrapper" role="group"
+     aria-labelledby="e3508a139f5320b2c8f6-problem-title"
+     data-problem-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6" data-url="/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/xblock/block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6/handler/xmodule_handler"
+     data-problem-score="3.0"
+     data-problem-total-possible="3.0"
+     data-attempts-used="2"
+     data-content="
+
+
+
+&amp;lt;h3 class=&amp;#34;hd hd-3 problem-header&amp;#34; id=&amp;#34;e3508a139f5320b2c8f6-problem-title&amp;#34; aria-describedby=&amp;#34;block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6-problem-progress&amp;#34; tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+  Лабораторая работа №1. Представление чисел в различных системах счисления
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem-progress&amp;#34; id=&amp;#34;block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6-problem-progress&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem&amp;#34;&amp;gt;
+  &amp;lt;div&amp;gt;
+  &amp;lt;ol&amp;gt;
+    &amp;lt;p&amp;gt;&amp;amp;#1055;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1080; &amp;amp;#1095;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1083;&amp;amp;#1086; &amp;#34;&amp;amp;#1040;&amp;#34;, &amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1077; &amp;amp;#1074; &amp;amp;#1089;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1077; &amp;amp;#1089;&amp;amp;#1095;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1083;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1103; &amp;#34;&amp;amp;#1042;&amp;#34;, &amp;amp;#1074; &amp;amp;#1089;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1091; &amp;amp;#1089;&amp;amp;#1095;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1083;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1103; &amp;#34;&amp;amp;#1057;&amp;#34;. &amp;amp;#1042;&amp;amp;#1089;&amp;amp;#1077;&amp;amp;#1075;&amp;amp;#1086; &amp;amp;#1085;&amp;amp;#1091;&amp;amp;#1078;&amp;amp;#1085;&amp;amp;#1086; &amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1096;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1100; 9 &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1074;.&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;amp;#1044;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1074; &amp;amp;#1089; 5-&amp;amp;#1075;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1086; 7-&amp;amp;#1081; &amp;amp;#1076;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1091;&amp;amp;#1089;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1103; &amp;amp;#1074;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1080; &amp;amp;#1087;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1072; &amp;amp;#1074;&amp;amp;#1099;&amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1083;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1094;&amp;amp;#1080;&amp;amp;#1102; &amp;amp;#1087;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1072; &amp;amp;#1087;&amp;amp;#1086; &amp;amp;#1089;&amp;amp;#1086;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1097;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1091; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1091; (&amp;amp;#1076;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1089;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1084; &amp;amp;#1089; &amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1077;&amp;amp;#1084; 2 &amp;amp;#1074; &amp;amp;#1089;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1099; &amp;amp;#1089; &amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1077;&amp;amp;#1084; 2^k).&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;amp;#1044;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1074; &amp;amp;#1089; 4-&amp;amp;#1075;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1086; 9-&amp;amp;#1081; &amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1081;&amp;amp;#1090;&amp;amp;#1080; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090; &amp;amp;#1089; &amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1095;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1100;&amp;amp;#1102; 5 &amp;amp;#1079;&amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1074; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1083;&amp;amp;#1077; &amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1087;&amp;amp;#1103;&amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1081;. &amp;amp;#1054;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1091;&amp;amp;#1075;&amp;amp;#1083;&amp;amp;#1103;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1073;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1099;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1077;&amp;amp;#1084; &amp;amp;#1095;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1077;&amp;amp;#1083; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1083;&amp;amp;#1077; 5-&amp;amp;#1075;&amp;amp;#1086; &amp;amp;#1079;&amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1082;&amp;amp;#1072;. &amp;amp;#1042; &amp;amp;#1082;&amp;amp;#1072;&amp;amp;#1095;&amp;amp;#1077;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077; &amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1079;&amp;amp;#1076;&amp;amp;#1077;&amp;amp;#1083;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1094;&amp;amp;#1077;&amp;amp;#1083;&amp;amp;#1086;&amp;amp;#1081; &amp;amp;#1080; &amp;amp;#1076;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1073;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1081; &amp;amp;#1095;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1080; &amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1079;&amp;amp;#1086;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1087;&amp;amp;#1103;&amp;amp;#1090;&amp;amp;#1091;&amp;amp;#1102;.&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;&amp;amp;#1047;&amp;amp;#1072;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1095;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1077;! &amp;lt;/b&amp;gt;&amp;amp;#1042; &amp;amp;#1089;&amp;amp;#1083;&amp;amp;#1091;&amp;amp;#1095;&amp;amp;#1072;&amp;amp;#1077; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1083;&amp;amp;#1091;&amp;amp;#1095;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1103; &amp;amp;#1076;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1073;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1081; &amp;amp;#1095;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1080;, &amp;amp;#1094;&amp;amp;#1077;&amp;amp;#1083;&amp;amp;#1091;&amp;amp;#1102; &amp;amp;#1095;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1086;&amp;amp;#1090; &amp;amp;#1076;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1073;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1081; &amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1079;&amp;amp;#1076;&amp;amp;#1077;&amp;amp;#1083;&amp;amp;#1103;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1087;&amp;amp;#1103;&amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1081;.&amp;lt;/p&amp;gt;
+  
+    &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = 32860&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 10&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 7&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 1&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_2_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_2_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_2_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_2_1&amp;#34; value=&amp;#34;164542&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_2_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_2_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_2_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    
+        &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = 89748&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 13&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 10&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 2&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_3_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_3_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_3_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_3_1&amp;#34; value=&amp;#34;249504&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_3_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_3_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_3_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    
+    &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = 56A31&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 11&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 9&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 3&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_4_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_4_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_4_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_4_1&amp;#34; value=&amp;#34;135064&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_4_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_4_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_4_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    
+     &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = 17,88&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 10&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 2&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 4&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_5_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_5_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_5_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_5_1&amp;#34; value=&amp;#34;10001,11100&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_5_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_5_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_5_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    
+    &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = BE,52&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 16&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 2&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 5&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_6_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_6_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_6_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_6_1&amp;#34; value=&amp;#34;10111110,01010&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_6_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_6_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_6_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    
+    &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = 47,76&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 8&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 2&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 6&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_7_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_7_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_7_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_7_1&amp;#34; value=&amp;#34;100111,11111&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_7_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_7_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_7_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    
+     &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = 0,100111&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 2&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 16&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 7&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_8_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_8_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_8_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_8_1&amp;#34; value=&amp;#34;0,9C&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_8_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_8_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_8_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+
+    &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = 0,110011&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 2&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 10&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 8&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_9_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_9_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_9_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_9_1&amp;#34; value=&amp;#34;0,79687&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_9_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_9_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_9_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    
+    &amp;lt;li&amp;gt;
+      &amp;lt;p&amp;gt;A = B0,CA&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;B = 16&amp;lt;/p&amp;gt;
+      &amp;lt;p&amp;gt;C = 10&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;&amp;amp;#1042;&amp;amp;#1086;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089; 9&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;div id=&amp;#34;inputtype_e3508a139f5320b2c8f6_10_1&amp;#34; class=&amp;#34; capa_inputtype  textline&amp;#34;&amp;gt;
+
+    &amp;lt;div class=&amp;#34;correct &amp;#34;&amp;gt;
+
+
+
+&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;input_e3508a139f5320b2c8f6_10_1&amp;#34; id=&amp;#34;input_e3508a139f5320b2c8f6_10_1&amp;#34; aria-describedby=&amp;#34;status_e3508a139f5320b2c8f6_10_1&amp;#34; value=&amp;#34;176,78906&amp;#34; size=&amp;#34;20&amp;#34;/&amp;gt;
+&amp;lt;span class=&amp;#34;trailing_text&amp;#34; id=&amp;#34;trailing_text_e3508a139f5320b2c8f6_10_1&amp;#34;/&amp;gt;
+
+
+
+&amp;lt;span class=&amp;#34;status correct&amp;#34; id=&amp;#34;status_e3508a139f5320b2c8f6_10_1&amp;#34; data-tooltip=&amp;#34;&amp;amp;#1069;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1085;&amp;amp;#1099;&amp;amp;#1081; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1090;.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1086;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+
+&amp;lt;p id=&amp;#34;answer_e3508a139f5320b2c8f6_10_1&amp;#34; class=&amp;#34;answer&amp;#34;/&amp;gt;
+
+
+    &amp;lt;/div&amp;gt;
+
+
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+  
+  &amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;#34;action&amp;#34;&amp;gt;
+    &amp;lt;input type=&amp;#34;hidden&amp;#34; name=&amp;#34;problem_id&amp;#34; value=&amp;#34;Лабораторая работа №1. Представление чисел в различных системах счисления&amp;#34; /&amp;gt;
+
+    &amp;lt;div class=&amp;#34;submit-attempt-container&amp;#34;&amp;gt;
+      &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;submit btn-brand&amp;#34; data-submitting=&amp;#34;Отправка&amp;#34; data-value=&amp;#34;Отправить&amp;#34; data-should-enable-submit-button=&amp;#34;True&amp;#34; aria-describedby=&amp;#34;submission_feedback_e3508a139f5320b2c8f6&amp;#34; &amp;gt;
+          &amp;lt;span class=&amp;#34;submit-label&amp;#34;&amp;gt;Отправить&amp;lt;/span&amp;gt;
+      &amp;lt;/button&amp;gt;
+      &amp;lt;div class=&amp;#34;submission-feedback&amp;#34; id=&amp;#34;submission_feedback_e3508a139f5320b2c8f6&amp;#34;&amp;gt;
+          Вы использовали 2 из 3 попыток
+        &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;В некоторых задачах доступны следующие действия: сохранение, сброс, показ подсказки или ответа. Соответствующие кнопки расположены рядом с кнопкой «Отправить».&amp;lt;/span&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;#34;problem-action-buttons-wrapper&amp;#34;&amp;gt;
+      &amp;lt;span class=&amp;#34;problem-action-button-wrapper&amp;#34;&amp;gt;
+          &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;save problem-action-btn btn-default btn-small&amp;#34; data-value=&amp;#34;Сохранить&amp;#34;&amp;gt;
+              &amp;lt;span class=&amp;#34;icon fa fa-floppy-o&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+              &amp;lt;span aria-hidden=&amp;#34;true&amp;#34;&amp;gt;Сохранить&amp;lt;/span&amp;gt;
+              &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;Сохранить ответ&amp;lt;/span&amp;gt;
+          &amp;lt;/button&amp;gt;
+      &amp;lt;/span&amp;gt;
+      &amp;lt;span class=&amp;#34;problem-action-button-wrapper&amp;#34;&amp;gt;
+          &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;show problem-action-btn btn-default btn-small&amp;#34; aria-describedby=&amp;#34;e3508a139f5320b2c8f6-problem-title&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;icon fa fa-info-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;show-label&amp;#34;&amp;gt;Показать ответ&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;
+      &amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-gentle-alert
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-exclamation-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;e3508a139f5320b2c8f6-problem-title&amp;#34;&amp;gt;
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Просмотреть&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-save
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-save&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;e3508a139f5320b2c8f6-problem-title&amp;#34;&amp;gt;None
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Просмотреть&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+
+
+&amp;lt;div class=&amp;#34;notification general notification-show-answer
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-info-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;e3508a139f5320b2c8f6-problem-title&amp;#34;&amp;gt;Ответы в задаче отмечены
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Просмотреть&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+"
+     data-graded="True"&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_content" role="tabpanel" aria-labelledby="tab_0">
+    <div class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized" data-runtime-class="LmsRuntime" data-init="VerticalStudentView" data-course-id="course-v1:ITMOUniversity+COMTEC+special_2018_1" data-request-token="7fa5885ed6fb11e89925d00d6f0f22c0" data-runtime-version="1" data-usage-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@vertical+block@e6b89be6c286420785f26c582870f72e" data-block-type="vertical">
+  
+
+  <h2 class="hd hd-2 unit-title">Лабораторая работа 1. Представление чисел в различных системах счисления</h2>
+    <h4 class="hd-8 de-emphasized">Этот элемент курса оценивается
+        как 'Лабораторная работа'<br>
+        вес:&nbsp;3.0
+    </h4>
+    <h4 class="hd-8 de-emphasized"><span class="localized-datetime subtitle-name" data-datetime="2018-12-31 21:00:00+00:00" data-string="до {date}" data-timezone="Europe/Moscow" data-language="RU"></span></h4>
+
+    
+
+
+
+<div class="bookmark-button-wrapper">
+  <button class="btn btn-link bookmark-button" aria-pressed="false" data-bookmark-id="kemol,block-v1:ITMOUniversity+COMTEC+special_2018_1+type@vertical+block@e6b89be6c286420785f26c582870f72e" data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/">
+     <span class="bookmark-text">Добавить страницу в мои закладки</span>
+    </button>
+</div>
+
+<div class="vert-mod">
+  <div class="vert vert-0" data-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@library_content+block@014afd16caf94eb8bb7a8a7b68c1dfd7">
+    <div class="xblock xblock-student_view xblock-student_view-library_content xmodule_display xmodule_LibraryContentModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="library_content" data-request-token="7fa5885ed6fb11e89925d00d6f0f22c0" data-runtime-version="1" data-usage-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@library_content+block@014afd16caf94eb8bb7a8a7b68c1dfd7" data-type="None" data-course-id="course-v1:ITMOUniversity+COMTEC+special_2018_1">
+  
+  
+
+
+<div class="vert-mod">
+  <div class="vert vert-0" data-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6">
+    <div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_CapaModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="problem" data-request-token="7fa5885ed6fb11e89925d00d6f0f22c0" data-runtime-version="1" data-usage-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6" data-type="Problem" data-course-id="course-v1:ITMOUniversity+COMTEC+special_2018_1">
+  
+  <div id="problem_e3508a139f5320b2c8f6" class="problems-wrapper" role="group" aria-labelledby="e3508a139f5320b2c8f6-problem-title" data-problem-id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6" data-url="/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/xblock/block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6/handler/xmodule_handler" data-problem-score="3.0" data-problem-total-possible="3.0" data-attempts-used="2" data-content="
+
+
+
+&lt;h3 class=&quot;hd hd-3 problem-header&quot; id=&quot;e3508a139f5320b2c8f6-problem-title&quot; aria-describedby=&quot;block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6-problem-progress&quot; tabindex=&quot;-1&quot;&gt;
+  Лабораторая работа №1. Представление чисел в различных системах счисления
+&lt;/h3&gt;
+
+&lt;div class=&quot;problem-progress&quot; id=&quot;block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6-problem-progress&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;problem&quot;&gt;
+  &lt;div&gt;
+  &lt;ol&gt;
+    &lt;p&gt;&amp;#1055;&amp;#1077;&amp;#1088;&amp;#1077;&amp;#1074;&amp;#1077;&amp;#1089;&amp;#1090;&amp;#1080; &amp;#1095;&amp;#1080;&amp;#1089;&amp;#1083;&amp;#1086; &quot;&amp;#1040;&quot;, &amp;#1079;&amp;#1072;&amp;#1076;&amp;#1072;&amp;#1085;&amp;#1085;&amp;#1086;&amp;#1077; &amp;#1074; &amp;#1089;&amp;#1080;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1084;&amp;#1077; &amp;#1089;&amp;#1095;&amp;#1080;&amp;#1089;&amp;#1083;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1103; &quot;&amp;#1042;&quot;, &amp;#1074; &amp;#1089;&amp;#1080;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1084;&amp;#1091; &amp;#1089;&amp;#1095;&amp;#1080;&amp;#1089;&amp;#1083;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1103; &quot;&amp;#1057;&quot;. &amp;#1042;&amp;#1089;&amp;#1077;&amp;#1075;&amp;#1086; &amp;#1085;&amp;#1091;&amp;#1078;&amp;#1085;&amp;#1086; &amp;#1088;&amp;#1077;&amp;#1096;&amp;#1080;&amp;#1090;&amp;#1100; 9 &amp;#1087;&amp;#1088;&amp;#1080;&amp;#1084;&amp;#1077;&amp;#1088;&amp;#1086;&amp;#1074;.&lt;/p&gt;
+
+&lt;p&gt;&amp;#1044;&amp;#1083;&amp;#1103; &amp;#1087;&amp;#1088;&amp;#1080;&amp;#1084;&amp;#1077;&amp;#1088;&amp;#1086;&amp;#1074; &amp;#1089; 5-&amp;#1075;&amp;#1086; &amp;#1087;&amp;#1086; 7-&amp;#1081; &amp;#1076;&amp;#1083;&amp;#1103; &amp;#1091;&amp;#1089;&amp;#1082;&amp;#1086;&amp;#1088;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1103; &amp;#1074;&amp;#1088;&amp;#1077;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1080; &amp;#1087;&amp;#1077;&amp;#1088;&amp;#1077;&amp;#1074;&amp;#1086;&amp;#1076;&amp;#1072; &amp;#1074;&amp;#1099;&amp;#1087;&amp;#1086;&amp;#1083;&amp;#1085;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1086;&amp;#1087;&amp;#1077;&amp;#1088;&amp;#1072;&amp;#1094;&amp;#1080;&amp;#1102; &amp;#1087;&amp;#1077;&amp;#1088;&amp;#1077;&amp;#1074;&amp;#1086;&amp;#1076;&amp;#1072; &amp;#1087;&amp;#1086; &amp;#1089;&amp;#1086;&amp;#1082;&amp;#1088;&amp;#1072;&amp;#1097;&amp;#1077;&amp;#1085;&amp;#1085;&amp;#1086;&amp;#1084;&amp;#1091; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1091; (&amp;#1076;&amp;#1083;&amp;#1103; &amp;#1089;&amp;#1080;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1084; &amp;#1089; &amp;#1086;&amp;#1089;&amp;#1085;&amp;#1086;&amp;#1074;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1077;&amp;#1084; 2 &amp;#1074; &amp;#1089;&amp;#1080;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1084;&amp;#1099; &amp;#1089; &amp;#1086;&amp;#1089;&amp;#1085;&amp;#1086;&amp;#1074;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1077;&amp;#1084; 2^k).&lt;/p&gt;
+
+&lt;p&gt;&amp;#1044;&amp;#1083;&amp;#1103; &amp;#1087;&amp;#1088;&amp;#1080;&amp;#1084;&amp;#1077;&amp;#1088;&amp;#1086;&amp;#1074; &amp;#1089; 4-&amp;#1075;&amp;#1086; &amp;#1087;&amp;#1086; 9-&amp;#1081; &amp;#1085;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1080; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090; &amp;#1089; &amp;#1090;&amp;#1086;&amp;#1095;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1100;&amp;#1102; 5 &amp;#1079;&amp;#1085;&amp;#1072;&amp;#1082;&amp;#1086;&amp;#1074; &amp;#1087;&amp;#1086;&amp;#1089;&amp;#1083;&amp;#1077; &amp;#1079;&amp;#1072;&amp;#1087;&amp;#1103;&amp;#1090;&amp;#1086;&amp;#1081;. &amp;#1054;&amp;#1082;&amp;#1088;&amp;#1091;&amp;#1075;&amp;#1083;&amp;#1103;&amp;#1090;&amp;#1100; &amp;#1086;&amp;#1090;&amp;#1073;&amp;#1088;&amp;#1072;&amp;#1089;&amp;#1099;&amp;#1074;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1077;&amp;#1084; &amp;#1095;&amp;#1080;&amp;#1089;&amp;#1077;&amp;#1083; &amp;#1087;&amp;#1086;&amp;#1089;&amp;#1083;&amp;#1077; 5-&amp;#1075;&amp;#1086; &amp;#1079;&amp;#1085;&amp;#1072;&amp;#1082;&amp;#1072;. &amp;#1042; &amp;#1082;&amp;#1072;&amp;#1095;&amp;#1077;&amp;#1089;&amp;#1090;&amp;#1074;&amp;#1077; &amp;#1088;&amp;#1072;&amp;#1079;&amp;#1076;&amp;#1077;&amp;#1083;&amp;#1080;&amp;#1090;&amp;#1077;&amp;#1083;&amp;#1103; &amp;#1094;&amp;#1077;&amp;#1083;&amp;#1086;&amp;#1081; &amp;#1080; &amp;#1076;&amp;#1088;&amp;#1086;&amp;#1073;&amp;#1085;&amp;#1086;&amp;#1081; &amp;#1095;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1080; &amp;#1080;&amp;#1089;&amp;#1087;&amp;#1086;&amp;#1083;&amp;#1100;&amp;#1079;&amp;#1086;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1079;&amp;#1072;&amp;#1087;&amp;#1103;&amp;#1090;&amp;#1091;&amp;#1102;.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;&amp;#1047;&amp;#1072;&amp;#1084;&amp;#1077;&amp;#1095;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1077;! &lt;/b&gt;&amp;#1042; &amp;#1089;&amp;#1083;&amp;#1091;&amp;#1095;&amp;#1072;&amp;#1077; &amp;#1087;&amp;#1086;&amp;#1083;&amp;#1091;&amp;#1095;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1103; &amp;#1076;&amp;#1088;&amp;#1086;&amp;#1073;&amp;#1085;&amp;#1086;&amp;#1081; &amp;#1095;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1080;, &amp;#1094;&amp;#1077;&amp;#1083;&amp;#1091;&amp;#1102; &amp;#1095;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1100; &amp;#1086;&amp;#1090; &amp;#1076;&amp;#1088;&amp;#1086;&amp;#1073;&amp;#1085;&amp;#1086;&amp;#1081; &amp;#1088;&amp;#1072;&amp;#1079;&amp;#1076;&amp;#1077;&amp;#1083;&amp;#1103;&amp;#1090;&amp;#1100; &amp;#1079;&amp;#1072;&amp;#1087;&amp;#1103;&amp;#1090;&amp;#1086;&amp;#1081;.&lt;/p&gt;
+  
+    &lt;li&gt;
+      &lt;p&gt;A = 32860&lt;/p&gt;
+      &lt;p&gt;B = 10&lt;/p&gt;
+      &lt;p&gt;C = 7&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 1&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_2_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_2_1&quot; id=&quot;input_e3508a139f5320b2c8f6_2_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_2_1&quot; value=&quot;164542&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_2_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_2_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_2_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    
+        &lt;li&gt;
+      &lt;p&gt;A = 89748&lt;/p&gt;
+      &lt;p&gt;B = 13&lt;/p&gt;
+      &lt;p&gt;C = 10&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 2&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_3_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_3_1&quot; id=&quot;input_e3508a139f5320b2c8f6_3_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_3_1&quot; value=&quot;249504&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_3_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_3_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_3_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;p&gt;A = 56A31&lt;/p&gt;
+      &lt;p&gt;B = 11&lt;/p&gt;
+      &lt;p&gt;C = 9&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 3&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_4_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_4_1&quot; id=&quot;input_e3508a139f5320b2c8f6_4_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_4_1&quot; value=&quot;135064&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_4_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_4_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_4_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    
+     &lt;li&gt;
+      &lt;p&gt;A = 17,88&lt;/p&gt;
+      &lt;p&gt;B = 10&lt;/p&gt;
+      &lt;p&gt;C = 2&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 4&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_5_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_5_1&quot; id=&quot;input_e3508a139f5320b2c8f6_5_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_5_1&quot; value=&quot;10001,11100&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_5_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_5_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_5_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;p&gt;A = BE,52&lt;/p&gt;
+      &lt;p&gt;B = 16&lt;/p&gt;
+      &lt;p&gt;C = 2&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 5&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_6_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_6_1&quot; id=&quot;input_e3508a139f5320b2c8f6_6_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_6_1&quot; value=&quot;10111110,01010&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_6_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_6_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_6_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;p&gt;A = 47,76&lt;/p&gt;
+      &lt;p&gt;B = 8&lt;/p&gt;
+      &lt;p&gt;C = 2&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 6&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_7_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_7_1&quot; id=&quot;input_e3508a139f5320b2c8f6_7_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_7_1&quot; value=&quot;100111,11111&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_7_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_7_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_7_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    
+     &lt;li&gt;
+      &lt;p&gt;A = 0,100111&lt;/p&gt;
+      &lt;p&gt;B = 2&lt;/p&gt;
+      &lt;p&gt;C = 16&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 7&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_8_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_8_1&quot; id=&quot;input_e3508a139f5320b2c8f6_8_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_8_1&quot; value=&quot;0,9C&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_8_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_8_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_8_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+
+    &lt;li&gt;
+      &lt;p&gt;A = 0,110011&lt;/p&gt;
+      &lt;p&gt;B = 2&lt;/p&gt;
+      &lt;p&gt;C = 10&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 8&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_9_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_9_1&quot; id=&quot;input_e3508a139f5320b2c8f6_9_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_9_1&quot; value=&quot;0,79687&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_9_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_9_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_9_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;p&gt;A = B0,CA&lt;/p&gt;
+      &lt;p&gt;B = 16&lt;/p&gt;
+      &lt;p&gt;C = 10&lt;/p&gt;
+&lt;div class=&quot;wrapper-problem-response&quot; tabindex=&quot;-1&quot; aria-label=&quot;&amp;#1042;&amp;#1086;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089; 9&quot; role=&quot;group&quot;&gt;&lt;div id=&quot;inputtype_e3508a139f5320b2c8f6_10_1&quot; class=&quot; capa_inputtype  textline&quot;&gt;
+
+    &lt;div class=&quot;correct &quot;&gt;
+
+
+
+&lt;input type=&quot;text&quot; name=&quot;input_e3508a139f5320b2c8f6_10_1&quot; id=&quot;input_e3508a139f5320b2c8f6_10_1&quot; aria-describedby=&quot;status_e3508a139f5320b2c8f6_10_1&quot; value=&quot;176,78906&quot; size=&quot;20&quot;/&gt;
+&lt;span class=&quot;trailing_text&quot; id=&quot;trailing_text_e3508a139f5320b2c8f6_10_1&quot;/&gt;
+
+
+
+&lt;span class=&quot;status correct&quot; id=&quot;status_e3508a139f5320b2c8f6_10_1&quot; data-tooltip=&quot;&amp;#1069;&amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1086;&amp;#1090;&amp;#1074;&amp;#1077;&amp;#1090;.&quot;&gt;
+  &lt;span class=&quot;sr&quot;&gt;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1086;&lt;/span&gt;&lt;span class=&quot;status-icon&quot; aria-hidden=&quot;true&quot;/&gt;
+&lt;/span&gt;
+
+
+&lt;p id=&quot;answer_e3508a139f5320b2c8f6_10_1&quot; class=&quot;answer&quot;/&gt;
+
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+  
+  &lt;/ol&gt;
+&lt;/div&gt;
+  &lt;div class=&quot;action&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;problem_id&quot; value=&quot;Лабораторая работа №1. Представление чисел в различных системах счисления&quot; /&gt;
+
+    &lt;div class=&quot;submit-attempt-container&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;submit btn-brand&quot; data-submitting=&quot;Отправка&quot; data-value=&quot;Отправить&quot; data-should-enable-submit-button=&quot;True&quot; aria-describedby=&quot;submission_feedback_e3508a139f5320b2c8f6&quot; &gt;
+          &lt;span class=&quot;submit-label&quot;&gt;Отправить&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;submission-feedback&quot; id=&quot;submission_feedback_e3508a139f5320b2c8f6&quot;&gt;
+          Вы использовали 2 из 3 попыток
+        &lt;span class=&quot;sr&quot;&gt;В некоторых задачах доступны следующие действия: сохранение, сброс, показ подсказки или ответа. Соответствующие кнопки расположены рядом с кнопкой «Отправить».&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;problem-action-buttons-wrapper&quot;&gt;
+      &lt;span class=&quot;problem-action-button-wrapper&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;save problem-action-btn btn-default btn-small&quot; data-value=&quot;Сохранить&quot;&gt;
+              &lt;span class=&quot;icon fa fa-floppy-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+              &lt;span aria-hidden=&quot;true&quot;&gt;Сохранить&lt;/span&gt;
+              &lt;span class=&quot;sr&quot;&gt;Сохранить ответ&lt;/span&gt;
+          &lt;/button&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;problem-action-button-wrapper&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;show problem-action-btn btn-default btn-small&quot; aria-describedby=&quot;e3508a139f5320b2c8f6-problem-title&quot;&gt;&lt;span class=&quot;icon fa fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;show-label&quot;&gt;Показать ответ&lt;/span&gt;&lt;/button&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    
+
+
+&lt;div class=&quot;notification warning notification-gentle-alert
+      is-hidden&quot;
+     tabindex=&quot;-1&quot;&gt;
+    &lt;span class=&quot;icon fa fa-exclamation-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;notification-message&quot; aria-describedby=&quot;e3508a139f5320b2c8f6-problem-title&quot;&gt;
+    &lt;/span&gt;
+    &lt;div class=&quot;notification-btn-wrapper&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-small notification-btn review-btn sr&quot;&gt;Просмотреть&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+
+
+&lt;div class=&quot;notification warning notification-save
+      is-hidden&quot;
+     tabindex=&quot;-1&quot;&gt;
+    &lt;span class=&quot;icon fa fa-save&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;notification-message&quot; aria-describedby=&quot;e3508a139f5320b2c8f6-problem-title&quot;&gt;None
+    &lt;/span&gt;
+    &lt;div class=&quot;notification-btn-wrapper&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-small notification-btn review-btn sr&quot;&gt;Просмотреть&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+
+
+&lt;div class=&quot;notification general notification-show-answer
+      is-hidden&quot;
+     tabindex=&quot;-1&quot;&gt;
+    &lt;span class=&quot;icon fa fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;notification-message&quot; aria-describedby=&quot;e3508a139f5320b2c8f6-problem-title&quot;&gt;Ответы в задаче отмечены
+    &lt;/span&gt;
+    &lt;div class=&quot;notification-btn-wrapper&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-small notification-btn review-btn sr&quot;&gt;Просмотреть&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+" data-graded="True">
+
+
+
+<h3 class="hd hd-3 problem-header" id="e3508a139f5320b2c8f6-problem-title" aria-describedby="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6-problem-progress" tabindex="-1">
+  Лабораторая работа №1. Представление чисел в различных системах счисления
+</h3>
+
+<div class="problem-progress" id="block-v1:ITMOUniversity+COMTEC+special_2018_1+type@problem+block@e3508a139f5320b2c8f6-problem-progress">3.0 из 3.0 баллов (оценивается)</div>
+
+<div class="problem">
+  <div>
+  <ol>
+    <p>Перевести число "А", заданное в системе счисления "В", в систему счисления "С". Всего нужно решить 9 примеров.</p>
+
+<p>Для примеров с 5-го по 7-й для ускорения времени перевода выполнить операцию перевода по сокращенному правилу (для систем с основанием 2 в системы с основанием 2^k).</p>
+
+<p>Для примеров с 4-го по 9-й найти ответ с точностью 5 знаков после запятой. Округлять отбрасыванием чисел после 5-го знака. В качестве разделителя целой и дробной части использовать запятую.</p>
+    <p><b>Замечание! </b>В случае получения дробной части, целую часть от дробной разделять запятой.</p>
+  
+    <li>
+      <p>A = 32860</p>
+      <p>B = 10</p>
+      <p>C = 7</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 1" role="group"><div id="inputtype_e3508a139f5320b2c8f6_2_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_2_1" id="input_e3508a139f5320b2c8f6_2_1" aria-describedby="status_e3508a139f5320b2c8f6_2_1" value="164542" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_2_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_2_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_2_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+    
+        <li>
+      <p>A = 89748</p>
+      <p>B = 13</p>
+      <p>C = 10</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 2" role="group"><div id="inputtype_e3508a139f5320b2c8f6_3_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_3_1" id="input_e3508a139f5320b2c8f6_3_1" aria-describedby="status_e3508a139f5320b2c8f6_3_1" value="249504" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_3_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_3_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_3_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+    
+    <li>
+      <p>A = 56A31</p>
+      <p>B = 11</p>
+      <p>C = 9</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 3" role="group"><div id="inputtype_e3508a139f5320b2c8f6_4_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_4_1" id="input_e3508a139f5320b2c8f6_4_1" aria-describedby="status_e3508a139f5320b2c8f6_4_1" value="135064" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_4_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_4_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_4_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+    
+     <li>
+      <p>A = 17,88</p>
+      <p>B = 10</p>
+      <p>C = 2</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 4" role="group"><div id="inputtype_e3508a139f5320b2c8f6_5_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_5_1" id="input_e3508a139f5320b2c8f6_5_1" aria-describedby="status_e3508a139f5320b2c8f6_5_1" value="10001,11100" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_5_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_5_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_5_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+    
+    <li>
+      <p>A = BE,52</p>
+      <p>B = 16</p>
+      <p>C = 2</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 5" role="group"><div id="inputtype_e3508a139f5320b2c8f6_6_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_6_1" id="input_e3508a139f5320b2c8f6_6_1" aria-describedby="status_e3508a139f5320b2c8f6_6_1" value="10111110,01010" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_6_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_6_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_6_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+    
+    <li>
+      <p>A = 47,76</p>
+      <p>B = 8</p>
+      <p>C = 2</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 6" role="group"><div id="inputtype_e3508a139f5320b2c8f6_7_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_7_1" id="input_e3508a139f5320b2c8f6_7_1" aria-describedby="status_e3508a139f5320b2c8f6_7_1" value="100111,11111" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_7_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_7_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_7_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+    
+     <li>
+      <p>A = 0,100111</p>
+      <p>B = 2</p>
+      <p>C = 16</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 7" role="group"><div id="inputtype_e3508a139f5320b2c8f6_8_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_8_1" id="input_e3508a139f5320b2c8f6_8_1" aria-describedby="status_e3508a139f5320b2c8f6_8_1" value="0,9C" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_8_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_8_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_8_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+
+    <li>
+      <p>A = 0,110011</p>
+      <p>B = 2</p>
+      <p>C = 10</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 8" role="group"><div id="inputtype_e3508a139f5320b2c8f6_9_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_9_1" id="input_e3508a139f5320b2c8f6_9_1" aria-describedby="status_e3508a139f5320b2c8f6_9_1" value="0,79687" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_9_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_9_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_9_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+    
+    <li>
+      <p>A = B0,CA</p>
+      <p>B = 16</p>
+      <p>C = 10</p>
+<div class="wrapper-problem-response" tabindex="-1" aria-label="Вопрос 9" role="group"><div id="inputtype_e3508a139f5320b2c8f6_10_1" class=" capa_inputtype  textline">
+
+    <div class="correct ">
+
+
+
+<input type="text" name="input_e3508a139f5320b2c8f6_10_1" id="input_e3508a139f5320b2c8f6_10_1" aria-describedby="status_e3508a139f5320b2c8f6_10_1" value="176,78906" size="20">
+<span class="trailing_text" id="trailing_text_e3508a139f5320b2c8f6_10_1"></span>
+
+
+
+<span class="status correct" id="status_e3508a139f5320b2c8f6_10_1" data-tooltip="Это правильный ответ.">
+  <span class="sr">верно</span><span class="status-icon" aria-hidden="true"></span>
+</span>
+
+
+<p id="answer_e3508a139f5320b2c8f6_10_1" class="answer"></p>
+
+
+    </div>
+
+
+</div></div>
+    </li>
+  
+  </ol>
+</div>
+  <div class="action">
+    <input type="hidden" name="problem_id" value="Лабораторая работа №1. Представление чисел в различных системах счисления">
+
+    <div class="submit-attempt-container">
+      <button type="button" class="submit btn-brand" data-submitting="Отправка" data-value="Отправить" data-should-enable-submit-button="True" aria-describedby="submission_feedback_e3508a139f5320b2c8f6">
+          <span class="submit-label">Отправить</span>
+      </button>
+      <div class="submission-feedback" id="submission_feedback_e3508a139f5320b2c8f6">
+          Вы использовали 2 из 3 попыток
+        <span class="sr">В некоторых задачах доступны следующие действия: сохранение, сброс, показ подсказки или ответа. Соответствующие кнопки расположены рядом с кнопкой «Отправить».</span>
+      </div>
+    </div>
+    <div class="problem-action-buttons-wrapper">
+      <span class="problem-action-button-wrapper">
+          <button type="button" class="save problem-action-btn btn-default btn-small" data-value="Сохранить">
+              <span class="icon fa fa-floppy-o" aria-hidden="true"></span>
+              <span aria-hidden="true">Сохранить</span>
+              <span class="sr">Сохранить ответ</span>
+          </button>
+      </span>
+      <span class="problem-action-button-wrapper">
+          <button type="button" class="show problem-action-btn btn-default btn-small" aria-describedby="e3508a139f5320b2c8f6-problem-title"><span class="icon fa fa-info-circle" aria-hidden="true"></span><span class="show-label">Показать ответ</span></button>
+      </span>
+    </div>
+  </div>
+    
+
+
+<div class="notification warning notification-gentle-alert
+      is-hidden" tabindex="-1">
+    <span class="icon fa fa-exclamation-circle" aria-hidden="true"></span>
+    <span class="notification-message" aria-describedby="e3508a139f5320b2c8f6-problem-title">
+    </span>
+    <div class="notification-btn-wrapper">
+        <button type="button" class="btn btn-default btn-small notification-btn review-btn sr">Просмотреть</button>
+    </div>
+</div>
+
+    
+
+
+<div class="notification warning notification-save
+      is-hidden" tabindex="-1">
+    <span class="icon fa fa-save" aria-hidden="true"></span>
+    <span class="notification-message" aria-describedby="e3508a139f5320b2c8f6-problem-title">None
+    </span>
+    <div class="notification-btn-wrapper">
+        <button type="button" class="btn btn-default btn-small notification-btn review-btn sr">Просмотреть</button>
+    </div>
+</div>
+
+    
+
+
+<div class="notification general notification-show-answer
+      is-hidden" tabindex="-1">
+    <span class="icon fa fa-info-circle" aria-hidden="true"></span>
+    <span class="notification-message" aria-describedby="e3508a139f5320b2c8f6-problem-title">Ответы в задаче отмечены
+    </span>
+    <div class="notification-btn-wrapper">
+        <button type="button" class="btn btn-default btn-small notification-btn review-btn sr">Просмотреть</button>
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  <nav class="sequence-bottom" aria-label="Раздел">
+    <button class="sequence-nav-button button-previous">
+      <span class="icon fa fa-chevron-prev" aria-hidden="true"></span>
+      <span>Назад</span>
+    </button>
+    <button class="sequence-nav-button button-next">
+      <span>Вперёд</span>
+      <span class="icon fa fa-chevron-next" aria-hidden="true"></span>
+    </button>
+  </nav>
+</div>
+
+</div>
+
+        </main>
+    </section>
+
+    <section class="courseware-results-wrapper">
+      <div id="loading-message" aria-live="polite" aria-relevant="all"></div>
+      <div id="error-message" aria-live="polite"></div>
+      <div class="courseware-results search-results" data-course-id="course-v1:ITMOUniversity+COMTEC+special_2018_1" data-lang-code="ru"></div>
+    </section>
+
+  </div>
+</div>
+<div class="container-footer">
+</div>
+
+<div id="accessibile-confirm-modal" class="modal" aria-hidden="true">
+  <div class="inner-wrapper" role="dialog" aria-labelledby="accessibile-confirm-title">
+    <button class="close-modal">
+      <span class="icon fa fa-remove" aria-hidden="true"></span>
+      <span class="sr">
+        Закрыть
+      </span>
+    </button>
+
+    <header>
+      <h2 id="accessibile-confirm-title">
+          Подтвердить
+        <span class="sr">,
+          открыто модальное окно
+        </span>
+      </h2>
+    </header>
+    <div role="alertdialog" class="status message" tabindex="-1">
+        <p class="message-title"></p>
+    </div>
+    <hr aria-hidden="true">
+    <div class="actions">
+        <button class="dismiss ok-button">ОК</button>
+        <button class="dismiss cancel-button" data-dismiss="leanModal">Отмена</button>
+    </div>
+  </div>
+  <a href="https://courses.openedu.ru/courses/course-v1:ITMOUniversity+COMTEC+special_2018_1/courseware/a40ba687d0364dbeb749a9669472a44b/c01c5aba9e9c48f0b4b3cf8dc31dda49/#accessibile-confirm-modal" rel="leanModal" id="confirm_open_button" style="display:none">открыть</a>
+</div>
+
+<script type="text/javascript">
+var accessible_confirm = function(message, callback) {
+    $("#accessibile-confirm-modal .cancel-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+    });
+    $("#accessibile-confirm-modal .ok-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+        callback();
+    });
+
+    accessible_modal("#accessibile-confirm-modal #confirm_open_button", "#accessibile-confirm-modal .close-modal", "#accessibile-confirm-modal", ".content-wrapper");
+    $("#accessibile-confirm-modal #confirm_open_button").click();
+    $("#accessibile-confirm-modal .message-title").html(message);
+};
+</script>
+
+
+      
+    </div>
+
+        
+
+
+
+
+
+<footer class="global-footer">
+  <div class="container-fluid">
+  <div class="row">
+      <div class="col-md-5  col-sm-12 side left-side">
+        <a href="https://openedu.ru/" class="pull-left"><img src="./lr1_files/logo-small.a2e576a818b3.png" alt="" class="logo-small"></a>
+        <ul class="list-unstyled">
+          <li><a href="https://openedu.ru/course">Каталог курсов</a></li>
+          <li><a href="https://openedu.ru/specialize">Напрвления подготовки</a></li>
+        </ul>
+      </div>
+      <div class="col-md-7 side right-side hidden-xs">
+        <div class="row">
+          <div class="col-md-5 col-sm-6">
+            <ul class="list-unstyled narrow">
+              <li><a href="http://npoed.ru/about">О проекте</a></li>
+              <li><a href="https://openedu.ru/faq/">Вопросы и ответы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-7 col-sm-6">
+            <ul class="list-unstyled wide">
+              <li><a href="https://openedu.ru/terms/">Пользовательское соглашение</a></li>
+              <li><a href="https://openedu.ru/contacts">Контакты</a></li>
+              <li><a href="https://openedu.ru/feedback">Помощь</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5 hidden-xs hidden-sm">
+        <a href="http://openedx.org/" target="_blank" class="openedx-logo">
+          <img src="./lr1_files/edx-openedx-logo-tag.png" width="150" height="50" alt="Powered by Open edX">
+        </a>
+      </div>
+    </div>
+
+    <div class="row copyright">
+      <div class="col-xs-12 col-md-5 copyright__sign">
+        © 2018 Открытое Образование
+        <ul class="list-inline">
+          <li>
+            <a href="https://www.facebook.com/openeduRU" target="_blank" title="Группа Национальной платформы открытого образования в facebook">
+              <img src="./lr1_files/fb.6819e839d3db.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/openeduRU" target="_blank" title="Группа Национальной платформы открытого образования во ВКонтакте">
+              <img src="./lr1_files/vk.61bf9c82eeb9.png">
+            </a>
+          </li>
+          <li>
+            <a href="http://ok.ru/group/52786563514445" target="_blank" title="Группа Национальной платформы открытого образования в Одноклассниках">
+              <img src="./lr1_files/ok.af6bc90aaca1.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/openeduRU" target="_blank" title="Группа Национальной платформы открытого образования в Instagram">
+              <img src="./lr1_files/inst.db679181d6ab.png">
+            </a>
+          </li>
+          <li>  
+            <a href="https://twitter.com/openeduRU" target="_blank" title="Страница Национальной платформы открытого образования в twitter">
+              <img src="./lr1_files/tw.32b0bf3c1233.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </footer>
+  <script type="text/javascript">
+    $(function () {
+      var dropdown = $('.dropdown');
+      dropdown.click( function() {
+          $(this).toggleClass('open');
+      });
+      $('#search-form').submit(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.location.href = this.action + '#query=' + $('#search-form-text').val();
+      });
+      $('#search-icon').click(function () {
+        $('#search-form').trigger('submit');
+      });
+      $('.header__dropdown-wrapper a').on('click', function() {
+        if($(this).attr('href') != null) {
+          window.location = $(this).attr('href');
+        }
+      })
+  });
+  </script>
+
+
+  
+
+  
+  
+  <script type="text/javascript" src="./lr1_files/jquery.scrollTo.525edcc52fe8.js.Без названия"></script>
+  <script type="text/javascript" src="./lr1_files/jquery.flot.d3d45ff0c6a8.js.Без названия"></script>
+
+  <script type="text/javascript" src="./lr1_files/codemirror-compressed.dd4b74f7c5fe.js.Без названия"></script>
+
+  <script type="text/javascript" src="./lr1_files/course_sidebar.7f581aba0c37.js.Без названия"></script>
+
+  
+    <script type="text/javascript" src="./lr1_files/lms-courseware.94e582ddac20.js.Без названия" charset="utf-8"></script>
+
+
+  
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="./lr1_files/MathJax.js.Без названия"></script>
+
+
+
+  
+    
+      <script type="text/javascript" src="./lr1_files/courseware_factory.1504fc10caef.js.Без названия"></script>
+    <script type="text/javascript">
+        (function (require) {
+            require(['js/courseware/courseware_factory'], function (CoursewareFactory) {
+                
+    CoursewareFactory();
+  
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+
+  <script type="text/javascript">
+    var $$course_id = "course\u002Dv1:ITMOUniversity+COMTEC+special_2018_1";
+  </script>
+
+<script src="./lr1_files/vertical_student_view.9f03a40c9517.js.Без названия" type="application/javascript"></script>
+
+
+
+  
+
+
+
+  <script type="text/javascript" src="./lr1_files/noreferrer.aa62a3e70ffa.js.Без названия" charset="utf-8"></script>
+  <script type="text/javascript" src="./lr1_files/navigation.323bf3e1ae16.js.Без названия" charset="utf-8"></script>
+  
+
+
+
+
+
+<!-- Performance beacon for onload times -->
+<div id="reader-feedback" class="sr" aria-live="polite"></div><div id="lean_overlay"></div><div class="tooltip" style="display: none; opacity: 0;"></div></body></html>
